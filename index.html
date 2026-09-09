@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Site de Monster Hunter</title>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="assets/Monster-Hunter-Logo-2004.png" alt="Logo do site">
+        <nav>
+            <ul>
+            <li onclick="irPara('inicio')">Início</li>
+            <li onclick="irPara('mundo')">Mundo</li>
+            <li onclick="irPara('jogos')">Jogos</li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- SEÇÃO 1 -->
+    <section class="section1" id="inicio">
+  <div class="monster">
+    <h2>MONSTER HUNTER</h2>
+    <div class="bemvindo">
+        <h1>Bem-vindo ao mundo de Monster Hunter!</h1>
+        <p>Cace, explore e sobreviva aos perigos do Velho Mundo!</p>
+        <div class="divBotoes">
+            <button class="botaoPrimario" onclick="irPara('mundo')">
+                Explorar <img src="assets/Hunters_Guild_Icon_Red_by_Kweazle.webp" alt="Ícone do Gremio de Caçadores"></button>
+            <button class="botaoSecundario" onclick="irPara('jogos')">Jogos</button>
+            </div>
+        </div>
+      </div> 
+    
+    </section>
+
+    <!-- SEÇÃO 2 -->
+    <section class="section2" id="mundo">
+        <h2 class="conheça">CONHEÇA O MUNDO</h2>
+        <div class="divCards">
+            <div class="card">
+                <img class="guild" src="assets/Hunters_Guild.webp" alt=" ">
+                <h3>Guilda de Caçadores</h3>
+                <p>A Guilda é a organização responsável por regular e supervisionar
+                    as atividades de caça no mundo de Monster Hunter. Eles fornecem
+                    missões, recompensas e suporte aos caçadores.</p>
+            </div>
+                <div class="card claro">
+            <img class="armas" src="assets/1938394668_preview_great-sword.png" alt=" ">
+            <h3>Armas</h3>
+            <p>As armas são ferramentas essenciais para os caçadores enfrentarem
+                os monstros. Cada arma possui características únicas, permitindo
+                diferentes estilos de combate e estratégias.</p>
+        </div>
+        <div class="card">
+            <img class="armaduras" src="assets/MHWA-Armor_Icon_Rare_1.png" alt=" ">
+            <h3>Armaduras</h3>
+            <p>As armaduras são equipamentos que protegem os caçadores durante
+                as batalhas. Elas oferecem resistência a ataques, habilidades
+                especiais e podem ser personalizadas com diferentes peças.</p>
+        </div>
+        <div class="card claro">
+            <img class="amigatos" src="assets/img_hunting_05.png" alt=" ">
+            <h3>Amigatos</h3>
+            <p>Os amigatos são companheiros felinos que auxiliam os caçadores em
+                suas aventuras. Eles podem ajudar na coleta de recursos, fornecer
+                suporte em combate e até mesmo participar de missões.</p>
+        </div>
+        <div class="card">
+            <img class="monstros" src="assets/MHNow-Rathalos_Icon.png" alt=" ">
+            <h3>Monstros</h3>
+            <p>Os monstros são criaturas poderosas e perigosas que habitam o mundo
+                de Monster Hunter. Cada monstro possui habilidades únicas, padrões
+                de ataque e fraquezas específicas que os caçadores devem aprender
+                para derrotá-los.</p>
+        </div>
+        <div class="card claro">
+            <img class="fatalis"src="assets/MHWI-Fatalis_Icon.webp" alt=" ">
+            <h3>Dragões Anciões</h3>
+            <p>Os dragões anciões são monstros lendários e extremamente 
+                perigosos que habitam o mundo de Monster Hunter. 
+                Eles possuem poderosas habilidades e são considerados os reis 
+                dos monstros.</p>
+        </div>
+    </div>
+    <!-- SEÇÃO 3 -->
+     <div class="textojogos" id="jogos">
+     <h2 class="jogos">CONHEÇA OS JOGOS</h2>
+     <p>Os jogos da série Monster Hunter são amplamente aclamados por sua 
+        jogabilidade envolvente e mundo rico em detalhes.</p>
+      </div>  
+        <div class="divImagens">
+            <img src="assets/image1.jpg" alt="Imagem do jogo Monster Hunter">
+            <img src="assets/image2.avif" alt="Imagem do jogo Monster Hunter">
+            <img src="assets/image3.jpg" alt="Imagem do jogo Monster Hunter">
+            <img src="assets/image4.webp" alt="Imagem do jogo Monster Hunter">
+            <img src="assets/image5.avif" alt="Imagem do jogo Monster Hunter">
+            <img src="assets/image6.avif" alt="Imagem do jogo Monster Hunter">
+            <img src="assets/image7.avif" alt="Imagem do jogo Monster Hunter">
+            <img src="assets/image8.jpg" alt="Imagem do jogo Monster Hunter">
+        </div>
+    </section>
+    <script>
+    function irPara(id) {
+        const elemento = document.getElementById(id);
+        if (elemento) {
+            elemento.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+    }
+</script>
+</body>
+</html>
